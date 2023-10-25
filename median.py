@@ -3,6 +3,7 @@
 "'Used method call in the prinitng statement '"
 
 def median(numbers):
+    numbers.sort()
     if len(numbers) % 2:
         return numbers[int(len(numbers)/2)]
     else:
@@ -17,4 +18,5 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
+
 print(f"The median is : {median(numbers)}")
